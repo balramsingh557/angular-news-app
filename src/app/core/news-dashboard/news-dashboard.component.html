@@ -1,0 +1,16 @@
+<div class="mt-6">
+  <app-spinner *ngIf="loading"></app-spinner>
+
+  <div *ngIf="!loading" class="flex flex-wrap justify-center gap-6">
+
+    <div
+      *ngFor="let news of newsDataList"
+      class="w-72 hover:cursor-pointer hover:scale-105"
+      (click)="onNewsClick(news.url)"
+    >
+      <img [src]="news.urlToImage" loading="lazy">
+      <div>{{news.title}}</div>
+    </div>
+
+  </div>
+</div>
