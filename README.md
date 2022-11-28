@@ -4,7 +4,7 @@
 
 Angular app that shows trending news based on News Rest API
 
-## Live Demo
+## Live Preview
 
 https://news-app-ng.netlify.app/
 
